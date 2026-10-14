@@ -151,6 +151,15 @@
    outline: none;
 }
 
+.menu .nav_products{
+   gap: 8px;
+   color: #237443;
+}
+
+.nav_products i{
+   font-size: 1.15rem;
+}
+
 .nav_actions{
    display: grid;
    gap: 10px;
@@ -212,6 +221,14 @@
 }
 
 @media (min-width: 1120px){
+   .nav_logo{
+      width: 160px;
+   }
+
+   .nav_phone span{
+      display: none;
+   }
+
    .navbar{
       top: 18px;
       gap: 24px;
@@ -227,7 +244,7 @@
       display: flex;
       align-items: center;
       justify-content: flex-end;
-      gap: 22px;
+      gap: 12px;
       flex: 1;
       padding: 0;
       border: 0;
@@ -265,7 +282,7 @@
 
    .nav_phone{
       min-height: 44px;
-      padding: 0 14px 0 8px;
+      padding: 6px;
       font-size: 0.9rem;
    }
 
@@ -279,8 +296,8 @@
 
 @media (min-width: 1180px){
    .menu a{
-      padding-inline: 14px;
-      font-size: 0.96rem;
+      padding-inline: 8px;
+      font-size: 0.9rem;
    }
 
    .nav_phone,
@@ -359,6 +376,12 @@
    color: #52645c;
 }
 
+.hero_actions{
+   display: grid;
+   gap: 12px;
+   margin-top: 28px;
+}
+
 .hero_cta{
    display: inline-flex;
    justify-content: center;
@@ -366,11 +389,11 @@
    gap: 12px;
    min-height: 54px;
    width: 100%;
-   margin-top: 28px;
+   margin-top: 0;
    padding: 14px 18px;
    border-radius: 6px;
-   background: #237443;
-   color: #fff;
+   background: var(--primary-color);
+   color: #000;
    text-decoration: none;
    font-size: 0.95rem;
    font-weight: 600;
@@ -383,8 +406,19 @@
 }
 
 .hero_cta:hover{
-   background: #155b30;
+   background: #e4c900;
    transform: translateY(-2px);
+}
+
+.hero_products{
+   background: transparent;
+   border: 1px solid #237443;
+   color: #237443;
+   box-shadow: none;
+}
+
+.hero_products:hover{
+   background: #edf5ee;
 }
 
 .hero_cta:focus-visible{
@@ -431,9 +465,15 @@
       font-size: 3.5rem;
    }
 
+   .hero_actions{
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      max-width: 440px;
+   }
+
    .hero_cta{
-      width: auto;
-      padding-inline: 24px;
+      padding-inline: 10px;
+      font-size: 0.85rem;
+      gap: 8px;
    }
 }
 
