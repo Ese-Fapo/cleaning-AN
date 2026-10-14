@@ -8,13 +8,11 @@
 
   <!--style css-->
   <link rel="stylesheet" href="style.css">
-  <!--font awsome cdn-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&family=Work+Sans:wght@500;600;700&display=swap"
     rel="stylesheet">
 
   <!--Remix icon cdn-->
@@ -40,12 +38,12 @@
     <div class="nav_panel" id="primary-menu">
       <ul class="menu">
         <li><a href="#services">Serviços</a></li>
-        <li><a href="index.html">Área de atendimento</a></li>
+        <li><a href="#atendimento">Atendimento</a></li>
         <li><a href="#sobre-nos">Sobre nós</a></li>
-        <li><a href="contact.html">Contato</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#como-trabalhamos">Como funciona</a></li>
         <li><a class="nav_products"
-          href="https://wa.me/554888061017?text=Ol%C3%A1%21%20Gostaria%20de%20comprar%20produtos%20de%20limpeza.%20Quais%20produtos%20voc%C3%AAs%20t%C3%AAm%20dispon%C3%ADveis%3F"
+          href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Gostaria%20de%20comprar%20produtos%20de%20limpeza.%20Quais%20produtos%20voc%C3%AAs%20t%C3%AAm%20dispon%C3%ADveis%3F"
           target="_blank" rel="noopener noreferrer"><i class="ri-shopping-bag-3-line" aria-hidden="true"></i> Comprar produtos</a></li>
       </ul>
 
@@ -55,7 +53,7 @@
           <span>+55 (48) 98806-1017</span>
         </a>
         <a class="nav_cta"
-          href="https://wa.me/554888061017?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20gratuito%20para%20servi%C3%A7os%20de%20limpeza."
+          href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20gratuito%20para%20servi%C3%A7os%20de%20limpeza."
           target="_blank" rel="noopener noreferrer">
           <span>Orçamento gratuito</span>
           <i class="ri-arrow-right-up-line" aria-hidden="true"></i>
@@ -66,12 +64,12 @@
   <!--NAVBAR section end-->
 
   <main>
-    <section class="hero" aria-labelledby="hero-title">
+    <section class="hero" id="services" aria-labelledby="hero-title">
       <div class="hero_inner">
         <div class="hero_content">
           <p class="hero_eyebrow"><span></span> A&N Serviços · Cuidado em cada detalhe</p>
           <h1 id="hero-title">Limpeza <span>profissional.</span></h1>
-          <ul class="hero_details" aria-label="Ambientes atendidos">
+          <ul class="hero_details" id="atendimento" aria-label="Ambientes atendidos">
             <li><i class="ri-home-4-line" aria-hidden="true"></i> Residências</li>
             <li><i class="ri-building-line" aria-hidden="true"></i> Empresas</li>
             <li><i class="ri-store-2-line" aria-hidden="true"></i> Comércios</li>
@@ -81,13 +79,13 @@
           <p class="hero_description">Um espaço limpo faz toda a diferença. Conte com a A&N para cuidar de cada detalhe e deixar seu dia mais leve.</p>
           <div class="hero_actions">
             <a class="hero_cta"
-              href="https://wa.me/554888061017?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20gratuito%20para%20servi%C3%A7os%20de%20limpeza."
+              href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20gratuito%20para%20servi%C3%A7os%20de%20limpeza."
               target="_blank" rel="noopener noreferrer">
               <i class="ri-whatsapp-line" aria-hidden="true"></i>
               Solicitar orçamento
             </a>
             <a class="hero_cta hero_products"
-              href="https://wa.me/554888061017?text=Ol%C3%A1%21%20Gostaria%20de%20comprar%20produtos%20de%20limpeza.%20Quais%20produtos%20voc%C3%AAs%20t%C3%AAm%20dispon%C3%ADveis%3F"
+              href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Gostaria%20de%20comprar%20produtos%20de%20limpeza.%20Quais%20produtos%20voc%C3%AAs%20t%C3%AAm%20dispon%C3%ADveis%3F"
               target="_blank" rel="noopener noreferrer">
               <i class="ri-shopping-bag-3-line" aria-hidden="true"></i>
               Comprar produtos
@@ -106,7 +104,7 @@
         <div class="hero_caption"><i class="ri-sparkling-2-line" aria-hidden="true"></i><span>Mais leveza para o seu dia.</span></div>
       </div>
     </section>
-        <!--WORKS section start-->
+    <!--WORKS section start-->
     <section class="works" id="como-trabalhamos" aria-labelledby="works-title">
       <img class="works_leaf works_leaf_one" src="cleaning.img/Images/growth-close_img1.webp" alt="" aria-hidden="true" loading="lazy">
       <img class="works_leaf works_leaf_two" src="cleaning.img/Images/growth-close_img2.webp" alt="" aria-hidden="true" loading="lazy">
@@ -184,7 +182,23 @@
       </div>
     </section>
     <!--about section end-->
+    <section class="contact" id="contato" aria-labelledby="contact-title">
+      <div class="contact_inner">
+        <div>
+          <h2 id="contact-title">Vamos cuidar do seu espaço?</h2>
+          <p>Conte o que você precisa e consulte nossa disponibilidade de atendimento pelo WhatsApp.</p>
+        </div>
+        <div class="contact_actions">
+          <a class="hero_cta" href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20gratuito." target="_blank" rel="noopener noreferrer"><i class="ri-whatsapp-line" aria-hidden="true"></i> Solicitar orçamento</a>
+          <a class="contact_phone" href="tel:+5548988061017">+55 (48) 98806-1017</a>
+        </div>
+      </div>
+    </section>
   </main>
+  <footer class="footer">
+    <p>A&amp;N Serviços · Cuidado em cada detalhe.</p>
+    <a href="#services">Voltar ao início ↑</a>
+  </footer>
 
 </body>
 
