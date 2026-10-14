@@ -657,23 +657,23 @@
 
 .about_leaf_one{
    width: 80px;
-   top: -20px;
-   left: -34px;
-   transform: rotate(-18deg);
+   top: -28px;
+   right: -26px;
+   transform: rotate(65deg);
 }
 
 .about_leaf_two{
    width: 32px;
-   bottom: 50px;
-   left: -20px;
-   transform: rotate(30deg);
+   top: 18px;
+   left: -18px;
+   transform: rotate(-35deg);
 }
 
 .about_leaf_three{
    width: 64px;
-   right: -24px;
-   bottom: 58px;
-   transform: rotate(-12deg);
+   left: -26px;
+   bottom: 64px;
+   transform: rotate(25deg);
 }
 
 .about_content{
@@ -790,22 +790,36 @@
 @media (min-width: 600px){
    .about_inner{ padding: 80px 40px; gap: 48px; }
    .about h2{ font-size: 2.5rem; }
-   .about_leaf_one{ width: 120px; top: -30px; left: -48px; }
-   .about_leaf_two{ width: 46px; bottom: 60px; left: -26px; }
-   .about_leaf_three{ width: 94px; bottom: 60px; right: -30px; }
+   .about_leaf_one{ width: 120px; top: -40px; right: -32px; }
+   .about_leaf_two{ width: 46px; top: 28px; left: -24px; }
+   .about_leaf_three{ width: 94px; bottom: 72px; left: -36px; }
 }
 
 @media (min-width: 960px){
    .about_inner{
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
       align-items: center;
-      gap: 64px;
+      gap: 0 64px;
       padding: 96px 24px;
+   }
+   .about_header{
+      grid-column: 2;
+      grid-row: 1;
+      align-self: end;
+   }
+   .about_visual{
+      grid-column: 1;
+      grid-row: 1 / span 2;
+   }
+   .about_content{
+      grid-column: 2;
+      grid-row: 2;
+      align-self: start;
    }
    .about_photo{ aspect-ratio: 1 / 1; }
    .about h2{ font-size: 2.75rem; }
-   .about_leaf_one{ width: 150px; top: -42px; left: -54px; }
-   .about_leaf_three{ width: 110px; right: -34px; }
+   .about_leaf_one{ width: 140px; top: -44px; right: -30px; }
+   .about_leaf_three{ width: 110px; left: -40px; }
 }
 
 /* How we work */
