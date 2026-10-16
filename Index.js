@@ -1,4 +1,17 @@
 const navbar = document.querySelector(".navbar");
+const trustedCarousel = document.querySelector('.trusted_carousel');
+if (trustedCarousel) {
+  const track = trustedCarousel.querySelector('.trusted_track');
+  const logos = track.querySelector('.trusted_logos');
+  const duplicate = logos.cloneNode(true);
+  duplicate.setAttribute('aria-hidden', 'true');
+  duplicate.querySelectorAll('img').forEach((img) => {
+    img.alt = '';
+    img.loading = 'eager';
+  });
+  track.append(duplicate);
+  trustedCarousel.classList.add('is-ready');
+}
 const navToggle = document.querySelector("#toggle");
 const navPanel = document.querySelector("#primary-menu");
 
