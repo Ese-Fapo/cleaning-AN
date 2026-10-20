@@ -7,7 +7,7 @@
   <title>Compra | Produtos de limpeza | A&amp;N Serviços</title>
   <meta name="description"
     content="Explore os produtos de limpeza da A&N: multiusos, desinfetantes, lava-roupas e muito mais. Consulte preços e compre diretamente pelo WhatsApp.">
-  <link rel="stylesheet" href="style.css?v=whatsapp-heartbeat-1">
+  <link rel="stylesheet" href="style.css?v=complete-1">
   <link rel="stylesheet" href="compra.css?v=5">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,22 +15,82 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&amp;family=Work+Sans:wght@500;600;700&amp;display=swap"
     rel="stylesheet">
   <script src="compra.js" defer></script>
+<script src="booking.js?v=complete-1" defer></script>
+<script src="Index.js?v=complete-1" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="icon" href="cleaning.img/Images/logo.png" type="image/png">
+<meta name="theme-color" content="#173e30">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="A&amp;N Serviços">
+<meta property="og:title" content="Compra | Produtos de limpeza | A&amp;N Serviços">
+<meta property="og:description" content="Explore os produtos de limpeza da A&N: multiusos, desinfetantes, lava-roupas e muito mais. Consulte preços e compre diretamente pelo WhatsApp.">
+<noscript><style>.nav_toggle{display:none}.navbar{position:relative;top:auto;flex-wrap:wrap;margin:16px auto}.nav_panel{position:static;flex-basis:100%;opacity:1;visibility:visible;transform:none;max-height:none}#contact-form{display:none}.hero_inner{padding-top:40px}</style></noscript>
 </head>
 
 <body class="shop-page">
- 
-  <header class="shop-header">
-    <nav class="shop-nav" aria-label="Navegação principal">
-      <a class="nav_logo" href="index.html" aria-label="A&N Serviços · página inicial"><img
-          src="cleaning.img/Images/logo.png" alt="A&N Serviços"></a>
-      
-      <a class="shop-contact"
-        href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Gostaria%20de%20ajuda%20para%20escolher%20produtos%20de%20limpeza%20da%20A%26N."
-        target="_blank" rel="noopener noreferrer"><img src="cleaning.img/Images/whatsapp.svg" width="18" height="18"
-          alt="" aria-hidden="true"> Fale com a gente</a>
-    </nav>
-  </header>
-  <main class="shop-container">
+  <a class="skip_link" href="#main-content">Pular para o conteúdo</a>
+  <nav class="navbar" aria-label="Navegação principal">
+    <a href="index.html" class="nav_logo" aria-label="A&N Serviços - Página inicial">
+      <img src="cleaning.img/Images/logo.png" alt="A&N Serviços">
+    </a>
+
+    <button class="nav_toggle" id="toggle" type="button" aria-label="Abrir menu" aria-expanded="false"
+      aria-controls="primary-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <div class="nav_panel" id="primary-menu">
+      <ul class="menu">
+        <li><a href="index.html#services">Serviços</a></li>
+        <li><a href="index.html#regiao">Atendimento</a></li>
+        <li><a href="index.html#sobre-nos">Sobre nós</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+        <li><a href="index.html#perguntas-frequentes">Dúvidas</a></li>
+        <li><a class="nav_products"
+            href="compra.html"><i class="ri-shopping-bag-3-line" aria-hidden="true"></i> Comprar
+            produtos</a></li>
+      </ul>
+
+      <div class="nav_actions">
+        <a class="nav_phone" href="tel:+5548988061017" aria-label="Ligar para A&N Serviços">
+          <i class="ri-phone-line" aria-hidden="true"></i>
+          <span>+55 (48) 98806-1017</span>
+        </a>
+        <a class="nav_cta nav_booking" href="index.html#contato" data-booking-open aria-haspopup="dialog" aria-controls="booking-dialog">
+          <i class="ri-calendar-schedule-line" aria-hidden="true"></i>
+          <span>Agendar limpeza</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <dialog class="booking_dialog" id="booking-dialog" aria-labelledby="booking-title" aria-describedby="booking-description">
+    <div class="booking_heading"><p class="contact_eyebrow">VAMOS COMBINAR?</p><button type="button" class="booking_close" aria-label="Fechar agendamento"><i class="ri-close-line" aria-hidden="true"></i></button></div>
+    <h2 id="booking-title">Um dia para cuidar<br><span>do seu espaço.</span></h2>
+    <p id="booking-description">Escolha uma data e um horário de preferência. Nossa equipe confirma a disponibilidade pelo WhatsApp.</p>
+    <div class="booking_hours"><i class="ri-time-line" aria-hidden="true"></i><div><strong>Horários de atendimento</strong><div data-working-hours><table class="working_hours_table"><caption class="hours_caption">Horários de atendimento — horário de Brasília</caption><thead><tr><th scope="col">Dia</th><th scope="col">Horário</th></tr></thead><tbody><tr><th scope="row">Segunda-feira</th><td>08:00–18:00</td></tr><tr><th scope="row">Terça-feira</th><td>08:00–18:00</td></tr><tr><th scope="row">Quarta-feira</th><td>08:00–18:00</td></tr><tr><th scope="row">Quinta-feira</th><td>08:00–18:00</td></tr><tr><th scope="row">Sexta-feira</th><td>08:00–18:00</td></tr><tr><th scope="row">Sábado</th><td>08:00–12:00</td></tr><tr><th scope="row">Domingo</th><td>Fechado</td></tr></tbody></table></div><small>Horários provisórios, sujeitos à confirmação pela equipe. Horário de Brasília.</small></div></div>
+    <form id="booking-form">
+      <div class="booking_calendar" aria-label="Escolha a data de preferência">
+        <div class="booking_month_nav"><button type="button" id="booking-prev" aria-label="Mês anterior"><i class="ri-arrow-left-s-line" aria-hidden="true"></i></button><h3 id="booking-month" aria-live="polite"></h3><button type="button" id="booking-next" aria-label="Próximo mês"><i class="ri-arrow-right-s-line" aria-hidden="true"></i></button></div>
+        <div class="booking_weekdays" aria-hidden="true"><span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span></div>
+        <div class="booking_days" id="booking-days" role="group" aria-labelledby="booking-month"></div>
+        <p class="booking_selected" id="booking-selected" aria-live="polite">Selecione um dia no calendário.</p>
+      </div>
+      <div class="contact_fields">
+        <div class="contact_field"><label for="booking-time">Horário de preferência *</label><select id="booking-time" required disabled><option value="">Escolha uma data primeiro</option></select></div>
+        <div class="contact_field"><label for="booking-service">Serviço *</label><select id="booking-service" required><option value="">Selecione um serviço</option><option>Limpeza residencial</option><option>Limpeza comercial</option><option>Limpeza profunda</option><option>Limpeza de mudança</option><option>Limpeza pós-obra</option><option>Limpeza de estofados</option><option>Preciso de orientação</option></select></div>
+        <div class="contact_field"><label for="booking-name">Seu nome *</label><input id="booking-name" autocomplete="name" maxlength="100" required placeholder="Como podemos chamar você?"></div>
+        <div class="contact_field"><label for="booking-location">Bairro e cidade *</label><input id="booking-location" autocomplete="address-level2" maxlength="150" required placeholder="Onde será a limpeza?"></div>
+        <div class="contact_field contact_field_full"><label for="booking-details">Detalhes <span class="contact_optional">(opcional)</span></label><textarea id="booking-details" rows="2" maxlength="2000" placeholder="Conte sobre o ambiente e o que você precisa."></textarea></div>
+      </div>
+      <button class="contact_submit" type="submit"><i class="ri-whatsapp-line" aria-hidden="true"></i> Solicitar pelo WhatsApp <i class="ri-arrow-right-up-line" aria-hidden="true"></i></button>
+      <p class="contact_form_note">Você revisa e envia a mensagem no WhatsApp. O horário só é reservado após a confirmação da equipe.</p>
+      <p class="contact_status" id="booking-status" role="status"></p>
+    </form>
+  </dialog>
+  <main id="main-content" tabindex="-1" class="shop-container">
     <nav class="shop-breadcrumb" aria-label="Você está aqui"><a href="index.html">Início</a><span
         aria-hidden="true">/</span><span aria-current="page">Comprar produtos</span></nav>
     <section class="shop-hero" aria-labelledby="shop-title">
@@ -84,7 +144,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Detergente%20clorado%20%C2%B7%202%20L%20%28refer%3Fncia%3A%20product%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Detergente%20clorado%20%C2%B7%202%20L%20%28refer%C3%AAncia%3A%20product%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Detergente clorado · 2 L pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -108,7 +168,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Multiusos%20Guimar%C3%A3es%20%28refer%3Fncia%3A%20product2%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Multiusos%20Guimar%C3%A3es%20%28refer%C3%AAncia%3A%20product2%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Multiusos Guimarães pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -132,7 +192,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Cloro%20ativo%20%C2%B7%205%20L%20%28refer%3Fncia%3A%20product3%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Cloro%20ativo%20%C2%B7%205%20L%20%28refer%C3%AAncia%3A%20product3%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Cloro ativo · 5 L pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -156,7 +216,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Desinfetante%20%C2%B7%202%20L%20%28refer%3Fncia%3A%20product4%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Desinfetante%20%C2%B7%202%20L%20%28refer%C3%AAncia%3A%20product4%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Desinfetante · 2 L pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -181,7 +241,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Multiuso%20bicarbonato%20%2B%20%C3%A1lcool%20%C2%B7%201%20L%20%28refer%3Fncia%3A%20product5%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Multiuso%20bicarbonato%20%2B%20%C3%A1lcool%20%C2%B7%201%20L%20%28refer%C3%AAncia%3A%20product5%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Multiuso bicarbonato + álcool · 1 L pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -205,7 +265,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Desengordurante%20Citrus%20%C2%B7%20500%20ml%20%28refer%3Fncia%3A%20product8%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Desengordurante%20Citrus%20%C2%B7%20500%20ml%20%28refer%C3%AAncia%3A%20product8%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Desengordurante Citrus · 500 ml pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -230,7 +290,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Tira-manchas%20%C2%B7%202%20L%20%28refer%3Fncia%3A%20product9%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Tira-manchas%20%C2%B7%202%20L%20%28refer%C3%AAncia%3A%20product9%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Tira-manchas · 2 L pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -255,7 +315,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Lava-roupas%20%C2%B7%203%20L%20%28refer%3Fncia%3A%20product10%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Lava-roupas%20%C2%B7%203%20L%20%28refer%C3%AAncia%3A%20product10%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Lava-roupas · 3 L pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -280,7 +340,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Lava-roupas%20Ciclo%20R%C3%A1pido%20%C2%B7%201%20L%20%28refer%3Fncia%3A%20product11%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Lava-roupas%20Ciclo%20R%C3%A1pido%20%C2%B7%201%20L%20%28refer%C3%AAncia%3A%20product11%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Lava-roupas Ciclo Rápido · 1 L pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -305,7 +365,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Amaciante%20Regular%20%28refer%3Fncia%3A%20product12%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Amaciante%20Regular%20%28refer%C3%AAncia%3A%20product12%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Amaciante Regular pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -330,7 +390,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Limpa%20Pisos%20Cl%C3%A1ssico%20%28refer%3Fncia%3A%20product13%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Limpa%20Pisos%20Cl%C3%A1ssico%20%28refer%C3%AAncia%3A%20product13%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Limpa Pisos Clássico pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -355,7 +415,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Limpa%20Pisos%20Cl%C3%A1ssico%20%C2%B7%20linha%20completa%20%28refer%3Fncia%3A%20product14%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Limpa%20Pisos%20Cl%C3%A1ssico%20%C2%B7%20linha%20completa%20%28refer%C3%AAncia%3A%20product14%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Limpa Pisos Clássico · linha completa pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -380,7 +440,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Neutralizador%20de%20odores%20%28refer%3Fncia%3A%20product15%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Neutralizador%20de%20odores%20%28refer%C3%AAncia%3A%20product15%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Neutralizador de odores pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -405,7 +465,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Neutralizador%20de%20odores%20%C2%B7%20linha%20pets%20%28refer%3Fncia%3A%20prodct16%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Neutralizador%20de%20odores%20%C2%B7%20linha%20pets%20%28refer%C3%AAncia%3A%20prodct16%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Neutralizador de odores · linha pets pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -430,7 +490,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Multiuso%20Multi%20Ox%20%C2%B7%205%20L%20%28refer%3Fncia%3A%20product17%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Multiuso%20Multi%20Ox%20%C2%B7%205%20L%20%28refer%C3%AAncia%3A%20product17%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Multiuso Multi Ox · 5 L pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -454,7 +514,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Multiuso%20Multi%20Ox%20%C2%B7%201%20L%20%28refer%3Fncia%3A%20product18%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Multiuso%20Multi%20Ox%20%C2%B7%201%20L%20%28refer%C3%AAncia%3A%20product18%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Multiuso Multi Ox · 1 L pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -479,7 +539,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Lava-autos%20com%20cera%20de%20carna%C3%BAba%20%C2%B7%205%20L%20%28refer%3Fncia%3A%20product6%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Lava-autos%20com%20cera%20de%20carna%C3%BAba%20%C2%B7%205%20L%20%28refer%C3%AAncia%3A%20product6%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Lava-autos com cera de carnaúba · 5 L pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -504,7 +564,7 @@
             </details>
             <div class="product-purchase">
               <p class="product-price">Consulte o preço</p><a class="product-cta"
-                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Lava-autos%20com%20cera%20de%20carna%C3%BAba%20%C2%B7%202%20L%20%28refer%3Fncia%3A%20product7%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
+                href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20produto%20Lava-autos%20com%20cera%20de%20carna%C3%BAba%20%C2%B7%202%20L%20%28refer%C3%AAncia%3A%20product7%29.%20Poderiam%20informar%20o%20pre%C3%A7o%20e%20a%20disponibilidade%3F"
                 target="_blank" rel="noopener noreferrer"
                 aria-label="Comprar Lava-autos com cera de carnaúba · 2 L pelo WhatsApp (abre em nova aba)"><img
                   src="cleaning.img/Images/whatsapp.svg" width="18" height="18" alt="" aria-hidden="true"> <span>Comprar<span class="product-cta-extra"> pelo WhatsApp</span></span></a>
@@ -539,12 +599,58 @@
     </div>
     </section>
   </main>
-  <footer class="shop-footer">
-    <div class="shop-container">
-      <p>A&amp;N Serviços · Cuidado em cada detalhe.</p><a href="index.html">Conheça nossos serviços ↗</a><a
-        href="tel:+5548988061017">(48) 98806-1017</a>
+        <footer class="site_footer" aria-label="Rodapé">
+    <div class="site_footer_inner">
+      <div class="footer_invitation">
+        <div><p class="footer_eyebrow">MAIS LEVEZA PARA O SEU DIA</p><h2>Deixe a limpeza <span>com a gente.</span></h2></div>
+        <a class="footer_quote" href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento%20gratuito."
+          target="_blank" rel="noopener noreferrer">Vamos cuidar do seu espaço <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a>
+      </div>
+
+      <div class="footer_grid">
+        <div class="footer_brand">
+          <a class="footer_logo" href="index.html#inicio" aria-label="A&N Serviços — voltar ao início"><img src="cleaning.img/Images/logo.png" alt="A&N Serviços" loading="lazy" decoding="async"></a>
+          <p>Cuidado em cada detalhe.<br>Limpeza para transformar seu ambiente e deixar sua rotina mais leve.</p>
+          <div class="footer_socials" aria-label="Redes sociais">
+            <a class="social_whatsapp" href="https://wa.me/5548988061017" target="_blank" rel="noopener noreferrer" aria-label="Fale com a A&N no WhatsApp"><i class="ri-whatsapp-fill" aria-hidden="true"></i></a>
+            <!-- Replace each unavailable item with an anchor when the business supplies its profile URL. -->
+            <span class="social_instagram" aria-label="Instagram — perfil não informado" aria-disabled="true" title="Instagram: link do perfil indisponível"><i class="ri-instagram-line" aria-hidden="true"></i></span>
+            <span class="social_facebook" aria-label="Facebook — perfil não informado" aria-disabled="true" title="Facebook: link do perfil indisponível"><i class="ri-facebook-fill" aria-hidden="true"></i></span>
+            <span class="social_tiktok" aria-label="TikTok — perfil não informado" aria-disabled="true" title="TikTok: link do perfil indisponível"><i class="ri-tiktok-fill" aria-hidden="true"></i></span>
+            <span class="social_youtube" aria-label="YouTube — perfil não informado" aria-disabled="true" title="YouTube: link do perfil indisponível"><i class="ri-youtube-fill" aria-hidden="true"></i></span>
+            <span class="social_linkedin" aria-label="LinkedIn — perfil não informado" aria-disabled="true" title="LinkedIn: link do perfil indisponível"><i class="ri-linkedin-fill" aria-hidden="true"></i></span>
+          </div>
+          <p class="footer_social_note">Vamos conversar? Nosso WhatsApp está a um toque.</p>
+        </div>
+
+        <nav class="footer_links" aria-labelledby="footer-explore"><h3 id="footer-explore">Explore</h3><ul>
+          <li><a href="index.html#inicio">Início</a></li><li><a href="index.html#sobre-nos">Sobre a A&N</a></li><li><a href="index.html#perguntas-frequentes">Dúvidas</a></li><li><a href="index.html#services">Nossos serviços</a></li><li><a href="index.html#perguntas-frequentes">Perguntas frequentes</a></li><li><a href="index.html#contato">Fale com a gente</a></li>
+        </ul></nav>
+
+        <nav class="footer_links" aria-labelledby="footer-services"><h3 id="footer-services">Nossos cuidados</h3><ul>
+          <li><a href="limpeza-residencial.html">Limpeza residencial</a></li><li><a href="limpeza-comercial.html">Limpeza comercial</a></li><li><a href="limpeza-profunda.html">Limpeza profunda</a></li><li><a href="limpeza-mudanca.html">Limpeza de mudança</a></li><li><a href="limpeza-pos-obra.html">Limpeza pós-obra</a></li><li><a href="limpeza-estofados.html">Limpeza de estofados</a></li><li><a class="footer_shop" href="compra.html">Loja de produtos <i class="ri-arrow-right-up-line" aria-hidden="true"></i></a></li>
+        </ul></nav>
+
+        <div class="footer_connect"><h3>Conte com a gente</h3>
+          <a class="footer_contact_item" href="tel:+5548988061017"><i class="ri-phone-line" aria-hidden="true"></i><span><small>Ligue para nós</small>+55 (48) 98806-1017</span></a>
+          <a class="footer_contact_item" href="https://wa.me/5548988061017" target="_blank" rel="noopener noreferrer"><i class="ri-whatsapp-line" aria-hidden="true"></i><span><small>Uma conversa resolve</small>Chamar no WhatsApp <i class="ri-arrow-right-up-line" aria-hidden="true"></i></span></a>
+          <div class="footer_contact_item"><i class="ri-map-pin-line" aria-hidden="true"></i><span><small>Vamos até você</small>Florianópolis e<br>Grande Florianópolis</span></div>
+          <a class="footer_coverage" href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Gostaria%20de%20consultar%20o%20atendimento%20no%20meu%20bairro."
+            target="_blank" rel="noopener noreferrer">Consulte seu bairro <i class="ri-arrow-right-line" aria-hidden="true"></i></a>
+          <div class="footer_hours"><h4><i class="ri-time-line" aria-hidden="true"></i> Horários de atendimento</h4><div data-working-hours><table class="working_hours_table"><caption class="hours_caption">Horários de atendimento — horário de Brasília</caption><thead><tr><th scope="col">Dia</th><th scope="col">Horário</th></tr></thead><tbody><tr><th scope="row">Segunda-feira</th><td>08:00–18:00</td></tr><tr><th scope="row">Terça-feira</th><td>08:00–18:00</td></tr><tr><th scope="row">Quarta-feira</th><td>08:00–18:00</td></tr><tr><th scope="row">Quinta-feira</th><td>08:00–18:00</td></tr><tr><th scope="row">Sexta-feira</th><td>08:00–18:00</td></tr><tr><th scope="row">Sábado</th><td>08:00–12:00</td></tr><tr><th scope="row">Domingo</th><td>Fechado</td></tr></tbody></table></div><small>Horários provisórios · confirme com a equipe.<br>Horário de Brasília.</small><a href="index.html#contato" data-booking-open aria-haspopup="dialog" aria-controls="booking-dialog">Escolher uma data <i class="ri-calendar-line" aria-hidden="true"></i></a></div>
+        </div>
+      </div>
+
+      <div class="footer_signature" aria-hidden="true">Seu espaço. <span>Nosso cuidado.</span><i class="ri-sparkling-2-line"></i></div>
+      <div class="footer_legal"><p>© <span id="footer-year">2026</span> A&N Serviços. Todos os direitos reservados.</p><span>Feito com cuidado, em cada detalhe.</span><a href="privacidade.html">Sobre seus dados</a><a href="index.html#inicio">Voltar ao topo <i class="ri-arrow-up-line" aria-hidden="true"></i></a></div>
     </div>
   </footer>
+  <a class="whatsapp_float"
+    href="https://wa.me/5548988061017?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20limpeza%20da%20A%26N%20e%20solicitar%20um%20or%C3%A7amento."
+    target="_blank" rel="noopener noreferrer" aria-label="Fale com a A&amp;N pelo WhatsApp (abre em nova aba)">
+    <img src="cleaning.img/Images/whatsapp.svg" alt="" width="26" height="26" aria-hidden="true">
+    <span>Fale pelo WhatsApp</span>
+  </a>
 </body>
 
 </html>

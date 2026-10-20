@@ -16,6 +16,8 @@ function filterProducts() {
   count.textContent = `${visible} ${visible === 1 ? 'produto encontrado' : 'produtos encontrados'}`;
   empty.hidden = visible !== 0;
 }
+// Keep the visible count in sync if products are added or removed from the catalog.
+filterProducts();
 filters.forEach((button) => button.addEventListener('click', () => {
   category = button.dataset.filter;
   filters.forEach((filter) => filter.setAttribute('aria-pressed', String(filter === button)));
