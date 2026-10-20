@@ -1330,7 +1330,8 @@ body.shop-page{ padding-bottom: calc(96px + env(safe-area-inset-bottom, 0px)); }
 .coverage_tags{ display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
 .coverage_tags span{ padding: 5px 12px; border-radius: 999px; background: #eef5e9; color: #315e3b; font-size: .72rem; }
 .coverage_note a, .faq_layout > div > a{ display: inline-flex; align-items: center; gap: 12px; min-height: 44px; color: #237443; font-size: .82rem; font-weight: 500; text-underline-offset: 4px; }
-.faq_section{ background: #fffdf6; }
+.faq_section{ position: relative; isolation: isolate; overflow: hidden; background: #fffdf6; }
+.faq_section::before{ content: ""; position: absolute; z-index: -1; left: -60px; bottom: -50px; width: clamp(280px, 34vw, 440px); aspect-ratio: 392 / 416; background: url("cleaning.img/Images/contact_element.webp") center / contain no-repeat; opacity: .22; pointer-events: none; }
 .faq_layout{ display: grid; gap: 32px; align-items: start; }
 .faq_layout > div > p:not(.service_eyebrow){ max-width: 320px; margin: 20px 0 14px; }
 .faq_items{ border-top: 1px solid #d7e1d3; }
@@ -1415,7 +1416,12 @@ body:has(.booking_dialog[open]){ overflow: hidden; }
    .booking_days, .booking_weekdays{ gap: 2px; }
 }
 
-.site_footer{ position: relative; overflow: hidden; background: #f5f5e9; color: #173e30; }
+.site_footer{ position: relative; isolation: isolate; overflow: hidden; background: #f5f5e9; color: #173e30; }
+.site_footer::before{ content: ""; position: absolute; z-index: -1; right: -65px; bottom: 48px; width: clamp(300px, 38vw, 500px); aspect-ratio: 392 / 416; background: url("cleaning.img/Images/contact_element.webp") center / contain no-repeat; opacity: .20; pointer-events: none; }
+@media (max-width: 599px){
+   .faq_section::before{ width: 250px; left: -90px; opacity: .16; }
+   .site_footer::before{ width: 280px; right: -100px; bottom: 80px; opacity: .15; }
+}
 .site_footer_inner{ max-width: 1180px; margin-inline: auto; padding: 56px 24px 24px; }
 .site_footer a{ color: inherit; text-decoration: none; }
 .footer_invitation{ display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px; padding-bottom: 40px; border-bottom: 1px solid #173e3026; }
@@ -1458,6 +1464,9 @@ a.footer_contact_item:hover span{ text-decoration: underline; text-underline-off
 .footer_signature > i{ margin-left: auto; padding-left: 12px; color: #597b3d; font-size: .7em; }
 .footer_legal{ display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px; padding-top: 22px; border-top: 1px solid #173e3026; color: #64715d; font-size: .68rem; }
 .footer_legal a{ display: inline-flex; align-items: center; gap: 10px; min-height: 44px; color: #173e30; }
+.footer_credit{ display: inline-flex; flex-wrap: wrap; align-items: center; gap: 5px; }
+.footer_credit a{ font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.footer_credit a:hover{ color: #237443; }
 .footer_legal a i{ display: grid; place-items: center; width: 32px; height: 32px; border: 1px solid #173e3026; border-radius: 50%; }
 @media (min-width: 600px){
    .site_footer_inner{ padding: 64px 40px 24px; }

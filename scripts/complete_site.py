@@ -89,7 +89,7 @@ for path in ROOT.glob('*.html'):
             source = source.replace('</head>', '<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&amp;family=Work+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet">\n</head>')
         if 'remixicon.css' not in source:
             source = source.replace('</head>', '<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">\n</head>')
-    source = re.sub(r'(?:style\.css|Index\.js|booking\.js)(?:\?v=[^"\s]+)?', lambda m: m.group().split('?')[0] + '?v=complete-1', source)
+    source = re.sub(r'(?:style\.css|Index\.js|booking\.js)(?:\?v=[^"\s]+)?', lambda m: m.group().split('?')[0] + '?v=complete-4', source)
     if 'class="skip_link"' not in source:
         source = re.sub(r'(<body[^>]*>)', r'\1\n  <a class="skip_link" href="#main-content">Pular para o conteúdo</a>', source, count=1)
     if 'id="main-content"' not in source:
