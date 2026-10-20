@@ -7,6 +7,8 @@ from pathlib import Path
 import html
 import json
 import re
+import subprocess
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 home_path = ROOT / 'index.html'
@@ -89,7 +91,7 @@ for path in ROOT.glob('*.html'):
             source = source.replace('</head>', '<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&amp;family=Work+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet">\n</head>')
         if 'remixicon.css' not in source:
             source = source.replace('</head>', '<link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">\n</head>')
-    source = re.sub(r'(?:style\.css|Index\.js|booking\.js)(?:\?v=[^"\s]+)?', lambda m: m.group().split('?')[0] + '?v=complete-4', source)
+    source = re.sub(r'(?:style\.css|Index\.js|booking\.js)(?:\?v=[^"\s]+)?', lambda m: m.group().split('?')[0] + '?v=complete-5', source)
     if 'class="skip_link"' not in source:
         source = re.sub(r'(<body[^>]*>)', r'\1\n  <a class="skip_link" href="#main-content">Pular para o conteúdo</a>', source, count=1)
     if 'id="main-content"' not in source:
@@ -128,3 +130,6 @@ if 'application/ld+json' not in home:
 (ROOT / '404.html').write_text('''<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="robots" content="noindex"><title>Página não encontrada | A&amp;N Serviços</title><link rel="stylesheet" href="style.css?v=complete-1"><link rel="icon" href="cleaning.img/Images/logo.png"></head><body class="not_found"><main><p class="service_eyebrow">A&N Serviços · 404</p><h1>Vamos encontrar<br>o caminho certo.</h1><p>Esta página não foi encontrada. Conheça os serviços ou fale com a nossa equipe.</p><a class="service_link" href="index.html">Voltar ao início →</a><a class="service_back" href="https://wa.me/5548988061017" target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp ↗</a></main></body></html>''', encoding='utf-8')
 (ROOT / 'robots.txt').write_text('User-agent: *\nAllow: /\n', encoding='utf-8')
 print('Updated shared navigation, booking, footer, FAQs, service preparation, metadata, data information, and 404 page.')
+sharing_script = ROOT / 'scripts/configure_sharing.py'
+if sharing_script.exists():
+    subprocess.run([sys.executable, str(sharing_script)], check=True)

@@ -1,6 +1,6 @@
 # A&N Serviços
 
-Static Portuguese website for a cleaning business in Florianópolis and region. Includes six service pages, a searchable 18-product catalog, contact forms, and a calendar that prepares booking requests for WhatsApp.
+Static Portuguese website for a cleaning business in Florianópolis and region. Includes seven service pages covering cleaning and gardening, a searchable 18-product catalog, contact forms, and a calendar that prepares booking requests for WhatsApp.
 
 ## Preview
 
@@ -33,6 +33,8 @@ node --check compra.js
 Checks cover local routes/assets, labels and controls, shared booking/hours, metadata, calendar time boundaries, WhatsApp message creation, and product search. Browser layout and real WhatsApp handoff should also be checked on desktop and mobile.
 
 ## Before launch
+
+The generated sharing image is `cleaning.img/Images/an-social-preview-v2.png`. To finish WhatsApp/Open Graph link previews, run `python scripts/configure_sharing.py --site-url https://YOUR-PUBLIC-DOMAIN/` with the real website URL, then deploy the updated HTML and image. The command saves the domain in `sharing.json`, writes absolute image URLs and canonical page URLs, and preserves page-specific titles/descriptions. Until a domain is configured, the metadata uses a local image path and the public preview remains unverified.
 
 Confirm official working hours, social profile URLs, and any additional business contact details. Hours are currently labeled provisional. Add genuine reviews and client logos only with appropriate approval; demonstration testimonials and logos have been removed.
 
